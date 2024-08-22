@@ -1,14 +1,10 @@
 // C++ code
 //
-int led=11;
 void setup()
 {
-  pinMode(led,OUTPUT);
+  Serial.begin(9600);
 }
 void loop()
 {
-  digitalWrite(led, 200);
-  delay(1000);
-  digitalWrite(led, 0);
-  delay(1000);
+  Serial.println("Hello World");
 }
